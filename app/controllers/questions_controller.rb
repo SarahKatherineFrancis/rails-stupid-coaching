@@ -8,7 +8,7 @@ class QuestionsController < ApplicationController
   end
 
   def coach_answer(question)
-    if question == "I am going to work"
+    if question.capitalize.rstrip == "I am going to work"
       "Great!"
     elsif question.end_with?("?")
       "Silly question, get dressed and go to work!"
